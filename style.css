@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(165, 189, 189);
+    font-family: 'Montserrat', Sans-serif;
+    font-weight: 700;
+}
+
+.navbar ul {
+    /* padding: 1em; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+}
+
+
+.navbar ul li {
+    cursor: pointer;
+    margin: 0 0 0 1em;
+    padding: 1em 1em 1em 0;
+    transition: all 0.2s ease-in-out; 
+}
+
+.navbar ul li:hover {
+    background-color: #fff;
+    padding: 1em;
+    /* margin: 0; */
+}
+
+.navbar ul li:active {
+    background-color: rgb(129, 156, 156);
+    padding: 1em 2em 1em 2em; 
+}
+
+.w-spacer {
+    top: 0;
+}
+
+.brand {
+    font-family: 'Jost', sans-serif;
+}
+
+.side-panel {
+    position: relative;
+}
+
+.side-panel {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    background-color: rgb(231, 241, 241);
+}
+
+.side-panel ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+fa {
+    margin: 1em;
+}
+
+.side-panel ul li {
+    cursor: pointer;
+    /* text-align: center; */
+    background-color: rgb(198, 228, 228);
+    font-family: 'Montserrat', sans-serif;
+    padding: .7em 0 .7em 0;
+    margin: .5em 0 .5em 0;
+    width: 90%;
+    border: none;
+    /* border-radius: 6px; */
+    transition: all .1s ease-in-out; 
+}
+
+.side-panel ul li:hover {
+    padding-right: 1em;
+    width: 100%;
+    background-color: rgb(177, 218, 218);
+    
+}
+
+.side-panel ul li:active {
+    /* scale: .99; */
+    width: 80%;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(126, 163, 163);
+    
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(34, 87, 87);
+}
+
+.footer-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: .5em;
+    text-align: center;
+}
